@@ -28,8 +28,17 @@ The deploy, revert, and verify can then be updated with the SQL to create, or mo
 
 The deployed artifact is a Docker image that will be automatically run in docker-compose or a kubernetes cluster.
 
+Build the Docker image giving it a name and tag. For example:
+
 ```
-docker build -t local/sqitch:1.2 .
+docker build -t local/msa-example-db-mgmt:1.0.1 .
+```
+Then, using the name and tag, `local/msa-example-db-mgmt:1.0.1`, we
+can update the `image` for the `migrations` service in the `docker-compose.yaml` file in the (Dev Cluster Repo)[https://github.com/glmartin/msa-example-dev-cluster]:
+
+```
+  migrations:
+    image: ocal/msa-example-db-mgmt:1.0.1
 ```
 
 For more information, refer to the [Sqitch](https://sqitch.org/) website.
