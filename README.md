@@ -38,7 +38,9 @@ can update the `image` for the `migrations` service in the `docker-compose.yaml`
 
 ```
   migrations:
-    image: ocal/msa-example-db-mgmt:1.0.1
+    image: local/msa-example-db-mgmt:1.0.1
 ```
+
+**NOTE**: I am not publishing the images for these example to any image repository. So they need to be build manually.
 
 For more information, refer to the [Sqitch](https://sqitch.org/) website.
