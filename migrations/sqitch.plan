@@ -1,0 +1,6 @@
+%syntax-version=1.0.0
+%project=restapi
+%uri=https://github.com/glmartin/restapi_db
+
+tables/organization 2024-02-01T18:23:00Z sqitch <sqitch@3baa2cd530fe> # Adds the organization table.
+tables/app_user 2024-02-01T18:23:26Z sqitch <sqitch@3baa2cd530fe> # Adds the app_user table.
